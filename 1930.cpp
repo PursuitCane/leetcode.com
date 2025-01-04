@@ -16,7 +16,7 @@ public:
                 if (sub[ch - 'a'].count(ch) == 0) {
                     sub[ch - 'a'].insert(ch);
                     count++;
-                    printf("%c%c%c\n", ch, ch, ch);
+                    //printf("%c%c%c\n", ch, ch, ch);
                 }
             }
             if (sub[ch - 'a'].size() == 26)
@@ -31,7 +31,7 @@ public:
                     continue;
                 sub[ch - 'a'].insert(j + 'a');
                 count++;
-                printf("%c%c%c\n", ch, j + 'a', ch);
+                //printf("%c%c%c\n", ch, j + 'a', ch);
             }
 
             freq[ch - 'a'] = curr;
