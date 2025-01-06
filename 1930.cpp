@@ -24,9 +24,7 @@ public:
             for (int j = 0; j < 26; j++) {
                 if (freq[ch - 'a'][j + 'a'] == curr[j + 'a'])
                     continue;
-                if (ch == j + 'a' &&
-                    curr[j + 'a'] - freq[ch - 'a'][j + 'a'] <= 1)
-                    continue;
+                if (ch == j + 'a') continue; 
                 if (sub[ch - 'a'].count(j + 'a'))
                     continue;
                 sub[ch - 'a'].insert(j + 'a');
