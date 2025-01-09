@@ -13,7 +13,6 @@ public:
         for (int i = 0; i < target.size(); i++) {
             int x_max = words[0].size() - target.size() + i + 1;
             for (int j = i; j < x_max; j++) {
-                if (i != 0 && j != 0 && dp[i][j] == 0) continue;
                 if (i == 0) dp[i][j] = 1;
                 dp[i+1][j+1] = dp[i+1][j];
                 int count = word_map[j][target[i]];
